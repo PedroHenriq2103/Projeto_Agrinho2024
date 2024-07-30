@@ -13,7 +13,7 @@ const PONTOS_PARA_CIDADE = 250; // Pontuação Máxima (Para Testes)
 // Funções
 
 function setup() {
-  createCanvas(600,400);
+  createCanvas(600, 400);
   caminhao = new Caminhao();
 
   for (let i = 0; i < 10; i++) {
@@ -91,9 +91,9 @@ function mostrarMenu() {
   text("Pressione ENTER para começar", width / 2, height / 1.5);
   fill(0, 0, 225);
   textSize(16);
-  text("DO CAMPO A SUA CASA", width / 3, height / 2.5);
+  text("DO CAMPO A SUA CASA", width / 2, height / 2.5);
   textSize(14);
-  text("TRANSPORTADORA", width / 4, height / 4);
+  text("TRANSPORTADORA", width / 3, height / 4);
   fill(255);
   textSize(14);
   text("Controles: Setas e Espaço", width / 4, height / 1.1);
@@ -103,8 +103,8 @@ function jogarJogo() {
   background(0);
   fill(0);
   noStroke();
-  rect(0, 250, 150, height); // Borda esquerda
-  rect(width - 0, 250, 150, height); // Borda direita
+  rect(0, 200, 100, height); // Borda esquerda
+  rect(width - 0, 200, 100, height); // Borda direita
 
   for (let faixa of faixasEstrada) {
     faixa.mostrar();
