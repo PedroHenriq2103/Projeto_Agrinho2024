@@ -13,7 +13,7 @@ const PONTOS_PARA_CIDADE = 250; // Pontuação Máxima (Para Testes)
 // Funções
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(windowWidth, windowHeight);
   caminhao = new Caminhao();
 
   for (let i = 0; i < 10; i++) {
