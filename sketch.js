@@ -103,8 +103,8 @@ function jogarJogo() {
   background(0);
   fill(0, 128, 0);
   noStroke();
-  rect(0, 200, 100, height); // Borda esquerda
-  rect(width - 0, 200, 100, height); // Borda direita
+  rect(0, 200, 150, height); // Borda esquerda
+  rect(width - 0, 200, 150, height); // Borda direita
 
   for (let faixa of faixasEstrada) {
     faixa.mostrar();
