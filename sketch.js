@@ -13,12 +13,16 @@ const PONTOS_PARA_CIDADE = 250; // Pontuação Máxima (Para Testes)
 // Funções
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(600,400);
   caminhao = new Caminhao();
 
   for (let i = 0; i < 10; i++) {
     faixasEstrada.push(new FaixaEstrada(i * 60));
   }
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
