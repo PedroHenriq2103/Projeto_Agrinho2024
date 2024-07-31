@@ -1,21 +1,3 @@
-let telaCheia = false;
-
-function keyPressed() {
-    if (keyCode === ENTER && estadoJogo === 'menu') {
-        iniciarJogo();
-    }
-
-    if (key === ' ') {
-        pausado = !pausado;
-    }
-
-    if (keyCode === F11) {
-        telaCheia = !telaCheia;
-        fullscreen(telaCheia);
-    }
-}
-
-
 // Variáveis
 let caminhao;
 let carros = [];
@@ -27,11 +9,12 @@ let intervaloCarro;
 let jogoVencido = false;
 let pausado = false;
 const PONTOS_PARA_CIDADE = 250; // Pontuação Máxima (Para Testes)
-
+let telacheia
 // Funções
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  fullscreen(telacheia)
   caminhao = new Caminhao();
 
   for (let i = 0; i < 10; i++) {
