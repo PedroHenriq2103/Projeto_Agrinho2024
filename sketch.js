@@ -1,3 +1,21 @@
+let telaCheia = false;
+
+function keyPressed() {
+    if (keyCode === ENTER && estadoJogo === 'menu') {
+        iniciarJogo();
+    }
+
+    if (key === ' ') {
+        pausado = !pausado;
+    }
+
+    if (keyCode === F11) {
+        telaCheia = !telaCheia;
+        fullscreen(telaCheia);
+    }
+}
+
+
 // Variáveis
 let caminhao;
 let carros = [];
